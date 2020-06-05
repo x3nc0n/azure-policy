@@ -116,7 +116,7 @@
                           "category": "AllMetrics",
                           "enabled": "[parameters('metricsEnabled')]",
                           "retentionPolicy": {
-                            "enabled": false,
+                            "enabled": true,
                             "days": 0
                           }
                         }
@@ -147,10 +147,6 @@
                           "enabled": "[parameters('logsEnabled')]"
                         },
                         {
-                          "category": "Audit",
-                          "enabled": "[parameters('logsEnabled')]"
-                        },
-                        {
                           "category": "SQLSecurityAuditEvents",
                           "enabled": "[parameters('logsEnabled')]"
                         },
@@ -160,6 +156,26 @@
                         },
                         {
                           "category": "AutomaticTuning",
+                          "enabled": "[parameters('logsEnabled')]"
+                        },
+                        {
+                          "category": "DevOpsOperationsAudit",
+                          "enabled": "[parameters('logsEnabled')]"
+                        },
+                        {
+                          "category": "DmsWorkers",
+                          "enabled": "[parameters('logsEnabled')]"
+                        },
+                        {
+                          "category": "ExecRequests",
+                          "enabled": "[parameters('logsEnabled')]"
+                        },
+                        {
+                          "category": "RequestSteps",
+                          "enabled": "[parameters('logsEnabled')]"
+                        },
+                        {
+                          "category": "Waits",
                           "enabled": "[parameters('logsEnabled')]"
                         },
                         {
