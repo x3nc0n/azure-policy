@@ -36,7 +36,7 @@
           "True",
           "False"
         ],
-        "defaultValue": "False"
+        "defaultValue": "True"
       },
       "logsEnabled": {
         "type": "String",
@@ -116,7 +116,7 @@
                           "category": "AllMetrics",
                           "enabled": "[parameters('metricsEnabled')]",
                           "retentionPolicy": {
-                            "enabled": true,
+                            "enabled": false,
                             "days": 0
                           }
                         }
@@ -147,27 +147,11 @@
                           "enabled": "[parameters('logsEnabled')]"
                         },
                         {
-                          "category": "SQLSecurityAuditEvents",
-                          "enabled": "[parameters('logsEnabled')]"
-                        },
-                        {
                           "category": "Timeouts",
                           "enabled": "[parameters('logsEnabled')]"
                         },
                         {
                           "category": "AutomaticTuning",
-                          "enabled": "[parameters('logsEnabled')]"
-                        },
-                        {
-                          "category": "DevOpsOperationsAudit",
-                          "enabled": "[parameters('logsEnabled')]"
-                        },
-                        {
-                          "category": "RequestSteps",
-                          "enabled": "[parameters('logsEnabled')]"
-                        },
-                        {
-                          "category": "Waits",
                           "enabled": "[parameters('logsEnabled')]"
                         },
                         {
